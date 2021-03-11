@@ -1,0 +1,68 @@
+﻿<Window x:Class="Atlas2._0.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Atlas2._0"
+        mc:Ignorable="d"
+        Title="Login/Signup"
+        Height="700" Width="878"
+        ResizeMode="NoResize">
+    <Canvas>
+        <Image x:Name="Logo" Source="Assets/SignUpPageLogo.png" Height="134" Width="332" Canvas.Left="273.28"
+            Canvas.Top="138" />
+
+        <TextBox x:Name="Email"
+                 Height="32" Width="296" TextWrapping="Wrap" Text="Email" 
+                 Canvas.Left="291.54"
+                 Canvas.Top="334.3" Foreground="#99000000"
+                 FontStretch="Medium"
+                 FontFamily="Segoe UI"
+                 FontSize="14"
+                 TextAlignment="Left"
+                 VerticalAlignment="Bottom"
+                 BorderThickness="2"/>
+
+
+
+        <PasswordBox x:Name="PBox" Height="32" Width="296"  Canvas.Left="292.04" Canvas.Top="406.7"
+                     Foreground="#99000000" FontStretch="Medium" FontFamily="Segoe UI"
+                     FontSize="14" BorderThickness="2" 
+                     ToolTip="Password"
+                     PasswordChanged="PBox_PasswordChanged"/>
+        <Label     x:Name="PassHack" Height="32" Width="100"  Canvas.Left="292.04" Canvas.Top="406.7"
+                     Content = "Password"
+                     VerticalContentAlignment="Top"
+                     HorizontalContentAlignment="Left"
+                     Foreground="#99000000" FontStretch="Medium" FontFamily="Segoe UI"
+                     FontSize="14" BorderThickness="2" IsEnabled="True"/>
+
+        <PasswordBox x:Name="CPBox" Height="32" Width="296"  Canvas.Left="292.54" Canvas.Top="479.1"
+                     Foreground="#99000000" FontStretch="Medium" FontFamily="Segoe UI"
+                     FontSize="14" BorderThickness="2" 
+                     ToolTip="Confirm password"
+                     PasswordChanged="CPBox_PasswordChanged"/>
+        <Label     x:Name="ConfirmPassHack" Height="32" Width="150"  Canvas.Left="292.54" Canvas.Top="479.1"
+                     Content = "Confirm password"
+                     VerticalContentAlignment="Top"
+                     HorizontalContentAlignment="Left"
+                     Foreground="#99000000" FontStretch="Medium" FontFamily="Segoe UI"
+                     FontSize="14" BorderThickness="2" IsEnabled="True"
+                     />
+        <Button x:Name="SignUp" Canvas.Left="378" Canvas.Top="552.1" Width="122.5" Height="45"  
+                Background="Transparent" BorderBrush="Transparent"
+                Style="{StaticResource TransparentStyle}"
+                Click="SignUp_Click">
+            <Image Source="Assets/SignUpButton.png" />
+        </Button>
+
+        <Button x:Name="Login" Canvas.Left="405.5" Canvas.Top="623" Width="68.5" Height="27"  
+                Background="Transparent" BorderBrush="Transparent"
+                Style="{StaticResource TransparentStyle}"
+                Click="Login_Click">
+            <Image Source="Assets/LoginButton.png" />
+        </Button>
+
+
+    </Canvas>
+</Window>
