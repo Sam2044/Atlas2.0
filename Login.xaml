@@ -44,7 +44,12 @@
             <Image Source="Assets/Login.png" />
         </Button>
 
-        
+        <Button x:Name="LoginLoginPage" Canvas.Left="405.56" Canvas.Top="567.79" Width="68.5" Height="27"  
+                Background="Transparent" BorderBrush="Transparent"
+                Style="{StaticResource TransparentStyle}"
+                Click="LoginLoginPage_OnClick">
+            <Image Source="Assets/Signup.png" />
+        </Button>
 
 
     </Canvas>
